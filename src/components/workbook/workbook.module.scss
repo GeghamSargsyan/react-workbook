@@ -1,0 +1,10 @@
+@import '../../styles/global-variables.scss';
+@import '../../styles/global-mixins.scss';
+
+.workbook {
+    &_title {
+     @include heading;
+     font-size: 45px;
+     color: $color-dark;
+    }
+}

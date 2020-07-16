@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button component render correctly 1`] = `
+<button
+  className="button button_success addUser"
+  onClick={[MockFunction]}
+  onKeyUp={[Function]}
+  type="button"
+>
+  add user
+</button>
+`;
+
+exports[`button component render correctly without props 1`] = `
+<button
+  className="button button_default"
+  onClick={[Function]}
+  onKeyUp={[Function]}
+  type="button"
+>
+  
+</button>
+`;

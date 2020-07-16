@@ -1,0 +1,70 @@
+@import '../../styles/global-variables.scss';
+@import '../../styles/global-mixins.scss';
+
+.user {
+    &_info {
+        @include medium-text;
+        display: flex;
+        min-width: 250px;
+        width: 70%;
+        background: $color-red;
+        padding: 25px;
+        color: $color-light;
+
+        &_img {
+            width: 200px;
+            height: 200px;
+            fill: $color-light;
+        }
+
+        &_details {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left: 25px;
+
+            &__detail {
+               width: 190px;
+               margin-right: 15px;
+
+               & > h5 {
+                   color: $color-light;
+                   font-size: $font-size-large;
+                   font-family: $font-family-libre-franklin;
+               }
+            }
+        }
+    }
+
+    &_title {
+        margin: 20px;
+        color: $color-dark-extra;
+        font-size: 47px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: $font-family-libre-franklin;
+    }
+
+    &_noHistory {
+        @include medium-text;
+        text-align: center;
+    }
+
+
+    &_experience {
+        margin: 20px 0;
+
+        &_details {
+            @include medium-text;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            padding: 20px;
+            box-shadow: 0 0 1px 0 $color-dark;
+
+            &__detail {
+                width: 180px;
+            }
+        }
+    }
+}

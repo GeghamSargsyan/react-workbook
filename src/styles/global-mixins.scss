@@ -1,0 +1,21 @@
+@import './global-variables.scss';
+
+@mixin error-text {
+  font-family: $font-family-fira-sans;
+  font-size: $font-size-small;
+  font-weight: 500;
+  color: $color-red;
+}
+
+@mixin medium-text {
+    font-family: $font-family-fira-sans;
+    font-size: $font-size-medium;
+    font-weight: 500;
+}
+
+@mixin heading {
+  color: $color-light;
+  font-family: $font-family-libre-franklin;
+  font-size: $font-size-large-extra;
+  font-weight: 700;
+}

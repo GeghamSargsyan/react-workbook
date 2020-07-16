@@ -1,0 +1,39 @@
+@import '../../../styles/global-variables.scss';
+@import '../../../styles/global-mixins.scss';
+
+.text-fild {
+  width: 100%;
+  
+  &_input {
+    outline: none;
+    height: 33px;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 0;
+    border-bottom: 1px solid $color-dark-extra;
+
+    &[type='date'] {
+      border: 1px solid $color-dark-extra;
+    }
+
+    &_with-border {
+      padding: 22px;
+      border: 0;
+      border-radius: 10px;
+      box-shadow: 0 0 4px 0 $color-dark-extra;
+    }
+
+    &.error {
+      border: 1px solid $color-red;
+    }
+
+    &_error {
+      @include error-text;
+      display: block;
+      margin-left: 10px;
+      height: 15px;
+      line-height: 15px;
+    }
+  }
+}

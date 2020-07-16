@@ -1,0 +1,15 @@
+@import '../../styles/global-mixins.scss';
+
+.experience {
+    @include medium-text;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px;
+    box-shadow: 0 0 1px 0 $color-dark;
+
+    &_detail {
+        width: 180px;
+    }
+}

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`text fild component render correctly 1`] = `
+<div
+  className="text-fild"
+>
+  <input
+    className="text-fild_input text-fild_input_with-border"
+    disabled={false}
+    name="email"
+    onChange={[Function]}
+    placeholder="text"
+    type="text"
+    value=""
+  />
+  <span
+    className="text-fild_input_error"
+  >
+    
+  </span>
+</div>
+`;
+
+exports[`text fild component render correctly without props 1`] = `
+<div
+  className="text-fild"
+>
+  <input
+    className="text-fild_input text-fild_input_defaulte"
+    disabled={false}
+    name=""
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value=""
+  />
+  <span
+    className="text-fild_input_error"
+  >
+    
+  </span>
+</div>
+`;

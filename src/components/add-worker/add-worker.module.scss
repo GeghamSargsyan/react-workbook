@@ -1,0 +1,88 @@
+@import '../../styles/global-mixins.scss';
+@import '../../styles/global-variables.scss';
+
+.add-worker {
+
+    &_title {
+     @include heading;
+     color: $color-dark;
+     margin: 20px;
+    }
+
+    &_info {
+        color: $color-blue;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &_error {
+        @include error-text;
+        margin-left: 25px;
+    }
+    &_user-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 40px;
+        border-bottom: 3px solid $color-dark;
+
+        &_label {
+            width: 320px;
+            margin: 20px;
+        }
+
+        &_buttons {
+            width: 100%;
+
+            &__button {
+                width: 150px;
+                margin:10px 20px;
+            }
+        }
+    }
+
+    &_user-experience {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        &_item {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px;
+
+            &_label{
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+
+                &_input {
+                    margin: 10px 0;
+                    width: 300px;
+                    height: 50px;
+                    padding: 5px;
+                }
+            }
+
+        }
+    }
+
+    &_button {
+        width: 60px;
+        height: 50px;
+        margin: 25px 20px 20px 0;
+        font-size: $font-size-large-extra;
+    }
+
+    &_buttons {
+        width: 100%;
+        margin-left: 25px;
+
+        &__button {
+            width: 150px;
+            height: 50px;
+            margin: 30px 20px 20px 0;
+        }
+    }
+}

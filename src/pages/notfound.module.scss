@@ -1,0 +1,25 @@
+@import '../styles/global-variables.scss';
+@import '../styles/global-mixins.scss';
+
+.notfound {
+  min-width: 320px;
+  width: 486px;
+  margin: 25vh auto 0;
+  padding: 39px 39px 50px;
+  background: #fdfdfd;
+  text-align: center;
+
+  &_title {
+    margin: 0;
+    color: $color-silver;
+    font-family: $font-family-fira-sans;
+    font-size: 92px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  &_error {
+    @include medium-text;
+    color: $color-red;
+  }
+}

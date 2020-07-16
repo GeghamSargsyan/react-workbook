@@ -1,0 +1,27 @@
+// INFO: font sizes
+$font-size-large-extra: 27px;
+$font-size-large: 20px;
+$font-size-medium: 16px;
+$font-size-small: 14px;
+
+// INFO: color scheme
+$background: #F9FBF2;
+$color-default-border: rgba(0, 0, 0, 0.2);
+$color-yellow: #d8c409;
+$color-light: #fafafa;
+$color-light-extra: #FFFFFF;
+$color-green: #30B800;
+$color-red: #CF2C00;
+$color-silver: #e0d7d7;
+$color-silver-transparent: rgba(138, 139, 135, 0.39);
+$color-blue: #0055FB;
+$color-blue-extra: #001871;
+$color-dark: #152a51e3;
+$color-dark-extra: #0E1C36;
+
+// INFO: font families
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+$font-family-fira-sans: 'Fira Sans', sans-serif;
+$font-family-libre-franklin: 'Libre Franklin', sans-serif;

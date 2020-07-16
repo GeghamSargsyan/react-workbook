@@ -1,0 +1,56 @@
+@import '../../../styles/global-mixins.scss';
+@import '../../../styles/global-variables.scss';
+
+.workbook-item {
+    margin-top: 25px;
+    padding: 10px 0;
+    box-shadow: 0 0 8px 0 #9e9999ab;
+
+    &_container {
+        @include medium-text;
+        text-align: left;
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+        table-layout: fixed;
+
+        @media (max-width: 900px) {
+            display: flex;
+            align-items: center;
+            width: inherit;
+        }
+
+        &_header,
+        &_main {
+            &__item {
+                overflow: hidden;
+                padding: 10px 5px;
+                max-width: 150px;
+            }
+
+
+        @media (max-width: 900px) {
+            display: flex;
+            flex-direction: column;
+        }
+        }
+
+        &_header {
+            text-transform: capitalize;
+            background: $color-dark;
+            color: $color-light;
+        }
+    }
+   
+    &_control {
+        text-align: right;
+        padding-right: 20px;
+
+        &__button {
+            width: 150px;
+            margin: 10px 25px 0;
+        }
+    }
+  }

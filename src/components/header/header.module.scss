@@ -1,0 +1,83 @@
+@import '../../styles/global-variables.scss';
+@import '../../styles/global-mixins.scss';
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 100vh;
+  padding: 20px 0;
+  background: $color-dark-extra;
+
+  &_user {
+    @include medium-text;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 45px 0 0;
+    padding: 15px;
+    background: $color-dark;
+    color: $color-light-extra;
+
+    &_img {
+      width: 50px;
+      height: 50px;
+      fill: $color-light-extra;
+      margin-right: 15px;
+    }
+
+    &_info {
+      section {
+       text-transform: capitalize;
+     }
+
+     & > section + section {
+      margin-top: 5px;
+     }
+    }
+  }
+
+  &_heading {
+    @include heading;
+    cursor: pointer;
+  }
+
+  &_nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 75px;
+
+    &__link {
+      @include medium-text;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      margin-top: 3px;
+      border-bottom: 1px solid $color-dark;
+      background: $color-dark;
+      text-decoration: none;
+      letter-spacing: 1px;
+      color: #fff;
+
+    }
+
+    &_active {
+      color: red;
+    }
+
+    &_logout {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 50px;
+      width: 60%;
+      margin: 0 auto; 
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import '../../../styles/global-mixins.scss';
+@import '../../../styles/global-variables.scss';
+
+.button {
+  @include medium-text;
+  cursor: pointer;
+  padding: 7px 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  color: $color-light-extra;
+  text-align: center;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+
+
+  &_default {
+    transition: .4s;
+    background: $color-blue;
+    border-color: $color-blue;
+
+    &:hover {
+      background: $color-light-extra;
+      color: $color-blue;
+    }
+    
+    &:focus{ outline-color: $color-blue }
+  }
+
+  &_success {
+    transition: .4s;
+    background: $color-green;
+    border-color: $color-green;
+
+    &:hover {
+      background: $color-light-extra;
+      color: $color-green;
+    }
+  }
+
+  &_warning{
+    transition: .4s;
+    background: $color-yellow;
+    border-color: $color-yellow;
+
+    &:hover {
+      background: $color-light-extra;
+      color: $color-yellow;
+    }
+
+    &:focus{ outline-color: $color-yellow }
+  }
+
+  &_danger {
+    transition: .4s;
+    background: $color-red;
+    border-color: $color-red;
+
+    &:hover {
+      background: $color-light-extra;
+      color: $color-red;
+    }
+
+    &:focus{ outline-color: $color-red }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background: $color-silver;
+    border-color: $color-silver;
+  }
+}

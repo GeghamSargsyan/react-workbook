@@ -1,0 +1,52 @@
+@import '../../styles/global-variables.scss';
+@import '../../styles/global-mixins.scss';
+
+.login {
+    margin: 150px auto;
+    min-width: 320px;
+    width: 540px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 3px 0px rgba(175, 168, 168, 0.25);
+
+    &_error {
+        @include error-text;
+        padding: 0 20px;
+
+        &_bold {
+            display: block;
+            font-weight: 700;
+            color: $color-dark;
+        }
+    }
+
+    &_form {
+        padding: 50px;
+
+        &_button {
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+        &_section {
+            display: flex;
+            align-items: center;
+
+            & > svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include heading;
+        height: 100px;
+        background: $color-dark;
+        text-align: center;
+    }
+}
