@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-workbook.git/static/css/main.f4b09ab0.chunk.css",
+    "main.js": "/react-workbook.git/static/js/main.e0d85efb.chunk.js",
+    "main.js.map": "/react-workbook.git/static/js/main.e0d85efb.chunk.js.map",
+    "runtime-main.js": "/react-workbook.git/static/js/runtime-main.33403e86.js",
+    "runtime-main.js.map": "/react-workbook.git/static/js/runtime-main.33403e86.js.map",
+    "static/js/2.7b5901fa.chunk.js": "/react-workbook.git/static/js/2.7b5901fa.chunk.js",
+    "static/js/2.7b5901fa.chunk.js.map": "/react-workbook.git/static/js/2.7b5901fa.chunk.js.map",
+    "index.html": "/react-workbook.git/index.html",
+    "precache-manifest.1ee8c331fb8f70494c7689d8262ae654.js": "/react-workbook.git/precache-manifest.1ee8c331fb8f70494c7689d8262ae654.js",
+    "service-worker.js": "/react-workbook.git/service-worker.js",
+    "static/css/main.f4b09ab0.chunk.css.map": "/react-workbook.git/static/css/main.f4b09ab0.chunk.css.map",
+    "static/js/2.7b5901fa.chunk.js.LICENSE.txt": "/react-workbook.git/static/js/2.7b5901fa.chunk.js.LICENSE.txt",
+    "static/media/password.bc4ca4d8.svg": "/react-workbook.git/static/media/password.bc4ca4d8.svg",
+    "static/media/user.e98bb7cb.svg": "/react-workbook.git/static/media/user.e98bb7cb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33403e86.js",
+    "static/js/2.7b5901fa.chunk.js",
+    "static/css/main.f4b09ab0.chunk.css",
+    "static/js/main.e0d85efb.chunk.js"
+  ]
+}
