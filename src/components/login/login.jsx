@@ -61,7 +61,7 @@ const LogIn = () => {
         </section>
         <section className={cx('login_form_section')}>
           <PasswordSvg />
-          <TextFild placeholder="password" name="password" value={options.password} onChange={handleChange} />
+          <TextFild type="password" placeholder="password" name="password" value={options.password} onChange={handleChange} />
         </section>
         <Button className={cx('login_form_button')} type="submit" theme="success">Log in</Button>
       </form>

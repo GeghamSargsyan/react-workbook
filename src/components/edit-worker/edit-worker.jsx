@@ -217,6 +217,7 @@ const EditWorker = () => {
           />
         </label>
         <label className={cx('add-worker_user-info_label')} htmlFor="birthDate">
+          {console.log(options.birthDate)}
           Birthdate
           <TextFild
             name="birthDate"
