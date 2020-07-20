@@ -51,7 +51,7 @@ export function currentUserReducer(state = initialState, action) {
         ...state,
         data: {
           ...state.data,
-          ...action.data,
+          ...action.payload,
         },
         isLoading: false,
         errorMsg: action.errorMsg,

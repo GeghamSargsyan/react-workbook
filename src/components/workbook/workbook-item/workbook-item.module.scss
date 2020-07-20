@@ -29,12 +29,13 @@
                 padding: 10px 5px;
                 max-width: 150px;
             }
-
-
-        @media (max-width: 900px) {
-            display: flex;
-            flex-direction: column;
-        }
+            
+            & > tr{
+                @media (max-width: 900px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
         }
 
         &_header {

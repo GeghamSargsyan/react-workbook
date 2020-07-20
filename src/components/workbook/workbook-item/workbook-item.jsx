@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames/bind';
 
 import { deleteUserAction } from '../../../store/thunks';
+import { getCureentJob } from '../../../utils';
 
 import { Button } from '../../fields';
 import Loading from '../../loader';
@@ -58,8 +59,7 @@ const WorkbookItem = ({
             <td className={cx('workbook-item_container_main__item')}>{birthDate}</td>
             <td className={cx('workbook-item_container_main__item')}>{email}</td>
             <td className={cx('workbook-item_container_main__item')}>{passportId}</td>
-            <td className={cx('workbook-item_container_main__item')}>{(users_companys[0]?.companyName || 'not working')}</td>
-
+            <td className={cx('workbook-item_container_main__item')}>{getCureentJob(users_companys)}</td>
           </tr>
         </tbody>
       </table>

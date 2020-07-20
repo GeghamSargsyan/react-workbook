@@ -7,14 +7,16 @@ export const isValidExperience = (
   endDate = moment().format('YYYY-MM-DD'),
 ) => (
   (
-    moment(newStartDate).isBefore(startDate) && moment(newEndDate).isBefore(startDate)
+    moment(newStartDate).isBefore(moment(startDate))
+    && moment(newEndDate || moment().format('YYYY-MM-DD')).isBefore(moment(startDate))
   )
-      || (
-        moment(newStartDate).isAfter(endDate) && moment(newEndDate).isAfter(endDate)
-      )
+  || (
+    moment(newStartDate).isAfter(moment(endDate || moment().format('YYYY-MM-DD')))
+    && moment(newEndDate || moment().format('YYYY-MM-DD')).isAfter(endDate)
+  )
 );
 
-export const isFutureDate = (startDate, endDate) => (
+export const isFutureDate = (startDate, endDate = moment().format('YYYY-MM-DD')) => (
   moment().isBefore(startDate)
   || moment().isBefore(endDate)
 );
