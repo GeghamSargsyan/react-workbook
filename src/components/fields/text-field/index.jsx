@@ -56,7 +56,7 @@ TextFild.defaultProps = {
 };
 
 TextFild.propTypes = {
-  type: PropTypes.oneOf(['text', 'passwrod', 'email', 'date']),
+  type: PropTypes.oneOf(['text', 'password', 'email', 'date']),
   theme: PropTypes.oneOf(['defaulte', 'with-border']),
   className: PropTypes.string,
   errorMsg: PropTypes.string,
