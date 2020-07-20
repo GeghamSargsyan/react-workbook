@@ -5,7 +5,7 @@ import { ReactComponent as UserSvg } from '../../assets/icons/user.svg';
 import { ReactComponent as PasswordSvg } from '../../assets/icons/password.svg';
 
 import { loginAction } from '../../store/thunks';
-import { user } from '../../store/selectors';
+import { auth } from '../../store/selectors';
 
 import { Button, TextFild } from '../fields';
 
@@ -16,15 +16,12 @@ const cx = classnames.bind(styles);
 
 const LogIn = () => {
   const dispatch = useDispatch();
-  const { isLoading, errorMsg } = useSelector(user);
+  const { isLoading, errorMsg } = useSelector(auth);
 
   const [options, setOptions] = useState({
     email: '',
     password: '',
   });
-
-  useEffect(() => {
-  }, [errorMsg]);
 
   const handleChange = useCallback(({ value, name }) => {
     setOptions((prevState) => ({
