@@ -8,7 +8,7 @@ import {
 
 import store from './store';
 
-import { ProtectedRoute } from './routes';
+import { ProtectedRoute } from './routers';
 
 import Home from './pages/home';
 import WorkerAdd from './pages/worker-add';
